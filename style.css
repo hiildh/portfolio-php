@@ -1,0 +1,253 @@
+/* Definição geral */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eccfc2; /* .color2 */
+    color: #5d2626; /* .color3 */
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Menu lateral */
+.menu-lateral {
+    position: fixed;
+    top: 20px; /* ajusta a posição no topo da tela */
+    left: 20px;
+    height: calc(100% - 40px); /* ocupa a altura completa, com espaçamento */
+    width: 250px;
+    overflow-y: auto;
+}
+
+.menu-lateral a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #5d2626; /* .color3 */
+    background-color: #cc8484; /* .color1 */
+    margin-bottom: 8px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.menu-lateral a:hover {
+    background-color: #798074; /* .color4 */
+    color: #fff;
+}
+
+/* Botão de menu (hambúrguer) */
+.menu-toggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #5d2626; /* Cor do botão */
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Colocar o botão acima do menu */
+}
+
+/* Mostrar menu lateral quando ativo */
+.menu-lateral.ativo {
+    transform: translateX(0);
+}
+
+/* Efeitos de navegação */
+
+/* Conteúdo */
+.conteudo {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 200px;
+}
+
+/* Estilos de Títulos */
+h1, h2 {
+    color: #5d2626; /* .color3 */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
+/* Imagens */
+.projeto img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+#historia img, #inicio img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Estilo dos Projetos */
+.categoria h3 {
+    color: #798074; /* .color4 */
+    margin-top: 20px;
+    font-size: 1.6em;
+    border-bottom: 2px solid #cc8484; /* .color1 */
+    padding-bottom: 5px;
+}
+
+.projeto {
+    background-color: #f8f3f1; /* tom leve de .color2 */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projeto h4 {
+    color: #5d2626; /* .color3 */
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.projeto p, .projeto ul li {
+    color: #5d2626;
+    line-height: 1.6;
+}
+
+.projeto ul {
+    padding-left: 20px;
+}
+
+.projeto ul li {
+    list-style: disc;
+    margin-bottom: 5px;
+}
+
+/* Botões de Ação */
+.projeto a button {
+    background-color: #cc8484; /* .color1 */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.projeto a button:hover {
+    background-color: #5d2626; /* .color3 */
+}
+
+/* Formulário de Cadastro */
+form {
+    background-color: #f8f3f1; /* tom leve de .color2 */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    font-weight: bold;
+    color: #5d2626; /* .color3 */
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cc8484; /* .color1 */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #cc8484; /* .color1 */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5d2626; /* .color3 */
+}
+
+/* Estilizando o scroll */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eccfc2; /* .color2 */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cc8484; /* .color1 */
+    border-radius: 10px;
+    border: 3px solid #eccfc2; /* .color2 */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5d2626; /* .color3 */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .conteudo {
+        margin-left: 0;
+    }
+    .menu-lateral {
+        display: none; /* Esconder menu lateral */
+        transform: translateX(0); /* Mostrar menu completo */
+        width: 250px;
+        position: fixed;
+        top: 85px;
+        right: 20px;
+        height: fit-content;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}

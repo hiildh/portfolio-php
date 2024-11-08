@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilda Helena - Desenvolvedora Fullstack</title>
+    <link rel="icon" href="imagens\bunny.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="menu-lateral">
+            <a href="#inicio">Início</a>
+            <a href="#historia">História</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#cadastro">Cadastro</a>
+        </nav>
+
+        <main class="conteudo">
+            <section id="inicio">
+                <button class="menu-toggle">☰ Menu</button>
+                <h1>Hilda Helena</h1>
+                <p>Desenvolvedora Fullstack</p>
+                <img src="imagens\download (4).jpg" alt="Imagem representativa de desenvolvimento">
+            </section>
+
+            <section id="historia">
+                <h2>Minha História</h2>
+                <p>Olá! Sou Hilda Helena, estudante de Ciência da Computação com um ano de experiência profissional em desenvolvimento web. Trabalho com frameworks como Vue.js e Django, criando soluções personalizadas e sistemas que atendem às necessidades específicas dos clientes. Além disso, tenho experiência com ferramentas como Flask e Selenium para automação e desenvolvimento ágil.</p>
+                <img src="imagens\download.jpg" alt="Imagem representativa de colaboração">
+            </section>
+
+            <section id="projetos">
+                <h2>Projetos</h2>
+                <div class="categoria">
+                    <h3>Desenvolvimento Web</h3>
+                    <div class="projeto">
+                        <h4>Zombie Survivor Social Network (ZSSN)</h4>
+                        <img src="imagens\ZSSN - Rede Social de Sobrevivência Zumbi - Google Chrome 06_11_2024 22_12_11.png" alt="ZSSN">
+                        <p>Uma rede social onde sobreviventes de um apocalipse zumbi podem compartilhar recursos e informações. 
+                            Utiliza Django e Django REST Framework para o backend e Vue.js no frontend.</p>
+                        <ul>
+                            <li><strong>Registro de Sobreviventes</strong>: cadastro de sobreviventes com informações detalhadas.</li>
+                            <li><strong>Dashboard do Sobrevivente</strong>: exibe detalhes do sobrevivente logado.</li>
+                            <li><strong>Relatórios</strong>: estatísticas de infecções e inventário.</li>
+                            <li><strong>Troca de Itens</strong>: permite que sobreviventes negociem recursos.</li>
+                        </ul>
+                        <a href="https://github.com/hiildh/Rede-Social-de-Sobrevivencia-Zumbi">
+                            <button>Ver Projeto</button>
+                        </a>
+                    </div>
+                    <div class="projeto">
+                        <h4>SNGPC - Sistema de Gerenciamento de Produtos Controlados</h4>
+                        <img src="imagens\SNGPC-Google_Chrome_11_09_2024_10_01_04.png" alt="SNGPC">
+                        <p>Uma plataforma para controle e rastreamento de medicamentos controlados, essencial para farmácias e distribuidoras. 
+                            Esse sistema permite registrar todas as movimentações e manter a conformidade com as normas da Anvisa.</p>
+                        <p><em>Nota: Este é um projeto privado, indisponível para acesso público.</em></p>
+                    </div>
+                    <div class="projeto">
+                        <h4>Resumo Fiscal</h4>
+                        <img src="imagens\ResumoFiscal-GoogleChrome_11_09_2024_10_06_00.png" alt="Resumo Fiscal">
+                        <p>Aplicação que processa arquivos de débitos fiscais gerados pelo ECAC e produz relatórios simplificados e fáceis de analisar.</p>
+                        <a href="http://www.resumofiscal.com.br/">
+                            <button>Ver Projeto</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="categoria">
+                    <h3>Automação e Web Scraping</h3>
+                    
+                    <div class="projeto">
+                        <h4>Bot de Automação de Notas Fiscais com Selenium</h4>
+                        <p>Automação para baixar notas fiscais diretamente dos portais da Prefeitura de Teresina e SEFAZ usando o certificado digital da empresa.
+                            Ferramenta construída em Python e Selenium para otimizar o processamento e obtenção de documentos fiscais.</p>
+                        <p><em>Nota: Este é um executável Python, sem repositório no GitHub.</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cadastro">
+                <h2>Cadastro</h2>
+                <form action="processar_cadastro.php" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required><br><br>
+            
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required><br><br>
+            
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(xx) xxxxx-xxxx"><br><br>
+            
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+            
+                    <input type="submit" value="Cadastrar">
+                </form>
+                <p>Ao se cadastrar, você concorda com nossa <a href="#">Política de Privacidade</a>.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
